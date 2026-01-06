@@ -193,11 +193,11 @@ img {
 --------------------------*/
 @media (max-width: 576px) {
   .swiper-container {
-    padding-bottom: 40px;
+    padding-bottom: 20px;
   }
 
   .swiper-slide {
-    padding: 30px 30px 68px;
+    padding: 40px 40px 50px;
   }
 
   .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
