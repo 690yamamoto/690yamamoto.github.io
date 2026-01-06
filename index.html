@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <title>山本のポートフォリオ</title>
+  <meta name="description" content="検索したときに表示されるテキストです。">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="cont/css/ress.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@11/swiper-bundle.min.css" type='text/css' media='all'>
+  <link rel="stylesheet" href="cont/css/style.css">
+</head>
+
+<body>
+  <div class="container">
+  <div class="container-sub">
+  <header role="banner" class="header">
+    <h1 class="header_logo">
+      <a href="index.html"><img class="logo" src="cont/img/logo.png" alt="山本のポートフォリオ"></a>
+    </h1>
+         <!--srcset="解像度を変えたスマホ用ロゴ画像"
+         <div class="header_nav">広島を拠点にウェブデザイナーとして5年の実務経験があります。
+            <a href="tel:070-2367-4415">070-2367-4415</a>
+         </div>-->
+  </header>
+
+  <main lore="main" class="main">
+    <section class="works"> 
+      <div class="swiper carousel">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="cont/img/works1.png" class="item__deco" alt="カタログの実績">
+            </div>
+            <div class="swiper-slide">
+              <img src="cont/img/works2.png" class="item__deco" alt="サイトデザインの実績">               
+            </div>
+            <div class="swiper-slide">
+              <img src="cont/img/works3.png" class="item__deco" alt="バナーの制作実績">                    
+            </div>
+            <div class="swiper-slide">
+              <img src="cont/img/works4.png" class="item__deco" alt="バナーの制作実績">              
+            </div>
+            <div class="swiper-slide">
+              <img src="cont/img/works5.png" class="item__deco" alt="バナーの制作実績">              
+            </div>
+          <div class="swiper-slide">
+              <img src="cont/img/works6.png" class="item__deco" alt="バナーの制作実績">              
+            </div>
+          </div>
+
+          <div class="swiper-pagination"></div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  </div>
+  </div>
+
+
+
+  <script src="https://unpkg.com/swiper@11.1.1/swiper-bundle.min.js"></script>
+  <script type="text/javascript">
+    const swiper = new Swiper(".swiper .swiper-container", {
+    loop: true,
+    observer: true, 
+    observeParents: true,
+    slidesPerView: 1.4, //スマホ用 表示枚数
+    centeredSlides : true,
+    speed: 300,
+    spaceBetween: 40,
+        
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+
+    autoplay: {
+      delay: 4500,
+      disableOnInteraction: false,
+      waitForTransition: false,
+    },
+
+    breakpoints: {
+    800: {
+      slidesPerView: 3.1, //PC・タブレット用 表示枚数
+      spaceBetween: 50,
+      }
+    }
+   });
+
+  </script>
+</body>
+</html>
