@@ -193,7 +193,7 @@ img {
 --------------------------*/
 @media (max-width: 576px) {
   .swiper-container {
-    padding-bottom: 20px;
+    padding-bottom: 30px;
   }
 
   .swiper-slide {
