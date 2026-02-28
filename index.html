@@ -1,99 +1,222 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html dir="ltr" lang="ja">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-  <title>山本のポートフォリオ</title>
-  <meta name="description" content="検索したときに表示されるテキストです。">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no">
+  <title>N.E.K.O.</title>
+  <meta name="description" content="山本家のねこ、ふうちゃんとこむぎ。天使のようにかわいい2匹だが決して仲はよくない。そんな彼女たちの日常は今日も続く。">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="cont/css/ress.css">
-  <link rel="stylesheet" href="https://unpkg.com/swiper@11/swiper-bundle.min.css" type='text/css' media='all'>
-  <link rel="stylesheet" href="cont/css/style.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=M+PLUS+1:wght@100..900&family=Syncopate:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    type="text/css">
 </head>
 
 <body>
-  <div class="container">
-  <div class="container-sub">
-  <header role="banner" class="header">
-    <h1 class="header_logo">
-      <a href="index.html"><img class="logo" src="cont/img/logo.png" alt="山本のポートフォリオ"></a>
-    </h1>
-         <!--srcset="解像度を変えたスマホ用ロゴ画像"
-         <div class="header_nav">広島を拠点にウェブデザイナーとして5年の実務経験があります。
-            <a href="tel:070-2367-4415">070-2367-4415</a>
-         </div>-->
-  </header>
+  <div class="texture">
+    <header>
+      <nav>
+        <ul class="nav">
+          <li class="nav_btn"><a href="#cat_notes" class="nav_btn-cat_intro">
+              <p class="transf-r">CAT&nbsp;NOTES</p><i class="fa-solid fa-arrow-down nav_arrow"></i>
+            </a>
+          </li>
+          <li class="nav_btn"><a href="#gallery" class="nav_btn-gallery">
+              <p class="transf-l">GALLERY</p><i class="fa-solid fa-arrow-down nav_arrow"></i>
+            </a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <main lore="main" class="main">
-    <section class="works"> 
-      <div class="swiper carousel">
-        <div class="swiper-container">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <img src="cont/img/works1.png" class="item__deco" alt="カタログの実績">
-            </div>
-            <div class="swiper-slide">
-              <img src="cont/img/works2.png" class="item__deco" alt="サイトデザインの実績">               
-            </div>
-            <div class="swiper-slide">
-              <img src="cont/img/works3.png" class="item__deco" alt="バナーの制作実績">                    
-            </div>
-            <div class="swiper-slide">
-              <img src="cont/img/works4.png" class="item__deco" alt="バナーの制作実績">              
-            </div>
-            <div class="swiper-slide">
-              <img src="cont/img/works5.png" class="item__deco" alt="バナーの制作実績">              
-            </div>
-          <div class="swiper-slide">
-              <img src="cont/img/works6.png" class="item__deco" alt="バナーの制作実績">              
+    <main class="main">
+      <div class="main_scroll">
+        <section class="main_container">
+          <div class="logo_img">
+            <h1 class="logo">
+              <picture>
+                <source media="(min-width: 768px)" srcset="images/logo.svg">
+                <img src="images/logo-sp.svg" alt="N.E.K.O.">
+              </picture>
+            </h1>
+            <div class="logo_group font_en">
+              <p class="logo_sub">
+                NOBLE&nbsp;ETERNAL&nbsp;KAWAII&nbsp;ONLY&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;
+              </p>
             </div>
           </div>
 
-          <div class="swiper-pagination"></div>
-
+          <div class="about_container">
+            <p class="about_txt">
+              皆さまはN.E.K.O.をご存知だろうか。<br>漢字にすると猫。そうご存知動物の猫である。だが今回はあえてアルファベットで表記しよう。するとどうだろう、ある単語が見えてくる…<br>Noble（気高い）、Eternal（永遠の）、Kawaii（かわいい）、Only（唯一の）………<br><span
+                class="about_txt-big">ぴったりすぎる</span><br>
+              今回は我が家の2匹のN.E.K.O.を紹介していく。<br>ちなみに画面下部の左がキジトラの「ふうちゃん（ちゃんまでが正式名称）」で右が「こむぎ」だ。とてもかわいい。ちなみに2匹の仲はそれほどよくはない。
+            </p>
           </div>
+
+          <div id="sticky">
+            <img src="images/sticky.png" class="sticky_cat" alt="ついてくる2匹のねこ">
+          </div>
+
+        </section>
+      </div>
+
+      <div class="parallax_box">
+        <div class="parallax_content para_img">
+          <p class="para_txt font_en">DYNAMITE BODY…</p>
+        </div>
+      </div>
+
+    </main>
+
+
+    <section id="cat_notes">
+      <div class="content_txt">
+        <h2 class="main_txt font_en">(&nbsp;&nbsp;&nbsp;CAT&nbsp;NOTES&nbsp;&nbsp;&nbsp;)</h2>
+        <p class="sub_txt">激マブCATSのご紹介</p>
+      </div>
+
+      <div class="cat_container fuuchan">
+        <div class="cat_txt">
+          <p class="cat_txt_main font_en">
+            KIJI<br class="sp_only">TORA
+          </p>
+          <p class="cat_txt_memo">
+            キジトラのふうちゃん。<br>
+            中国新聞の里親募集広告で出会う。おさわり厳禁、爪切り厳禁、もちろんお風呂も厳禁。高貴な性格をしており、すぐに手が出る。こむぎのことは好きでも嫌いでもない様子。そしてとてもかわいい。
+          </p>
+          <div class="cat_txt_info">
+            <dl class="flex-box">
+              <dt class="cat_txt_dt">性別</dt>
+              <dd class="cat_txt_dd">♀</dd>
+            </dl>
+            <dl class="flex-box">
+              <dt class="cat_txt_dt">年齢</dt>
+              <dd class="cat_txt_dd">12歳（人間でいうと64歳）</dd>
+            </dl>
+            <dl class="flex-box">
+              <dt class="cat_txt_dt">出身</dt>
+              <dd class="cat_txt_dd">海田ブックオフ裏の民家</dd>
+            </dl>
+          </div>
+        </div>
+
+        <div class="cat_img">
+          <img src="images/kijitora.jpg" alt="ふうちゃん">
+        </div>
+      </div>
+
+
+      <div class="cat_container">
+        <div class="cat_img">
+          <img src="images/mikeneko.jpg" alt="こむぎ">
+        </div>
+
+        <div class="cat_txt">
+          <p class="cat_txt_main font_en">
+            MIKE<br class="sp_only">NEKO
+          </p>
+          <p class="cat_txt_memo">
+            三毛猫のこむぎ。<br>
+            本通りの「保護猫カフェ 廣島ねこ奉行」で出会う。野生でも生き残れたであろう人懐こさだ。ふうちゃんのことは好きか嫌いかでいえばほんの少し嫌いな様子。（物理的に）とても重く、とてもかわいい。
+          </p>
+          <div class="cat_txt_info">
+            <dl class="flex-box">
+              <dt class="cat_txt_dt">性別</dt>
+              <dd class="cat_txt_dd">♀</dd>
+            </dl>
+            <dl class="flex-box">
+              <dt class="cat_txt_dt">年齢</dt>
+              <dd class="cat_txt_dd">4歳（人間でいうと32歳）</dd>
+            </dl>
+            <dl class="flex-box">
+              <dt class="cat_txt_dt">出身</dt>
+              <dd class="cat_txt_dd">？</dd>
+            </dl>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="gallery">
+      <h2 class="main_txt font_en">(&nbsp;&nbsp;&nbsp;GALLERY&nbsp;&nbsp;&nbsp;)</h2>
+      <p class="sub_txt">2匹のいつもの日常</p>
+      <div class="cat_container">
+        <div class="gallery">
+          <div class="item"><img src="images/gallery1.jpg" alt="台所の2匹"></div>
+          <div class="item"><img src="images/gallery2.jpg" alt="窓辺での気ままな休日"></div>
+          <div class="item"><img src="images/gallery3.jpg" alt="日向ぼっこ"></div>
+          <div class="item"><img src="images/gallery4.jpg" alt="そこに何かいる？"></div>
+          <div class="item"><img src="images/gallery5.jpg" alt="尻力"></div>
+          <div class="item"><img src="images/gallery6.jpg" alt="幼き日のふうちゃん"></div>
+          <div class="item"><img src="images/gallery7.jpg" alt="巨大すぎるこむぎ"></div>
+          <div class="item"><img src="images/gallery8.jpg" alt="毛繕いの奇跡"></div>
+          <div class="item"><img src="images/gallery9.jpg" alt="甘えてくるときもあるふうちゃん"></div>
         </div>
       </div>
     </section>
-  </main>
+
+
+    <footer>
+      <p class="footer_copy"><span class="font_en">&copy;2026</span>&nbsp;&nbsp;山本&nbsp;菜央</p>
+    </footer>
+
   </div>
-  </div>
 
 
+  <script>
+    window.addEventListener('scroll', function () {
+      const stickyCat = document.querySelector('.sticky_cat');
+      if (!stickyCat) return;
 
-  <script src="https://unpkg.com/swiper@11.1.1/swiper-bundle.min.js"></script>
-  <script type="text/javascript">
-    const swiper = new Swiper(".swiper .swiper-container", {
-    loop: true,
-    observer: true, 
-    observeParents: true,
-    slidesPerView: 1.2, //スマホ用 表示枚数
-    centeredSlides : true,
-    speed: 300,
-    spaceBetween: 30,
-        
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-
-    autoplay: {
-      delay: 4500,
-      disableOnInteraction: false,
-      waitForTransition: false,
-    },
-
-    breakpoints: {
-    800: {
-      slidesPerView: 3.1, //PC・タブレット用 表示枚数
-      spaceBetween: 50,
+      if (window.scrollY > 100) {
+        stickyCat.classList.add('is-small');
+      } else {
+        stickyCat.classList.remove('is-small');
       }
-    }
-   });
+      const subTexts = document.querySelectorAll('.logo_sub');
+      const speed = 0.3; // 0.1〜0.8くらいで調整（大きいほど速い）
 
+      subTexts.forEach(text => {
+        // スクロール量に応じて上にずらす
+        const yPos = -(window.scrollY * speed);
+        text.style.transform = `translateY(${yPos}px)`;
+      });
+    });
+
+    // 修正：関数として独立させ、即時実行する
+    const initLoopText = () => {
+      const group = document.querySelector('.logo_group');
+      if (group && !group.classList.contains('is-animated')) {
+        const item = group.querySelector('.logo_sub');
+
+        // すでに複製済みでないか確認（念のため）
+        if (group.children.length === 1) {
+          for (let i = 0; i < 6; i++) {
+            const clone = item.cloneNode(true);
+            group.appendChild(clone);
+          }
+        }
+
+        // 複製が完了し、レイアウトが確定したタイミングでアニメーション開始
+        requestAnimationFrame(() => {
+          group.classList.add('is-animated');
+        });
+      }
+    };
+
+    // 読み込み完了時に実行
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initLoopText);
+    } else {
+      initLoopText();
+    }
   </script>
 </body>
+
 </html>
