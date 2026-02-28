@@ -1,0 +1,625 @@
+@charset "UTF-8";
+
+:root {
+  --main-color: #df3213;
+  --txt-color: #272221;
+}
+
+/*base--------------------*/
+html {
+  font-size: 100%;
+  line-height: 1.8;
+  height: 100%;
+  width: 100%;
+  overflow-wrap: break-word;
+  color: var(--main-color);
+  scroll-behavior: smooth;
+  background-color: var(--main-color);
+}
+
+body {
+  font-family: "M PLUS 1", sans-serif;
+  font-size: 16px;
+  margin: 0;
+  letter-spacing: 0.1em;
+  background-color: #fff;
+  border: 4px solid var(--main-color);
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: var(--main-color);
+  z-index: 9999;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: var(--main-color);
+  z-index: 9999;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  border: 0;
+  margin: 0;
+  height: auto;
+  vertical-align: bottom;
+  max-width: 100%;
+}
+
+figure {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--main-color)
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+.font_en {
+  font-family: Syncopate, sans-serif;
+}
+
+.flex-box {
+  display: flex;
+}
+
+
+
+
+/*header--------------------*/
+header {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+
+.nav li a {
+  display: flex;
+  align-items: center;
+  line-height: 1;
+}
+
+.transf-r {
+  transform: rotate(-2.5deg);
+}
+
+.transf-l {
+  transform: rotate(2.5deg);
+}
+
+.nav li {
+  margin-right: 0;
+}
+
+.nav_arrow {
+  font-size: 0.8rem;
+  margin-left: 5px;
+  display: inline-block;
+}
+
+.nav_btn {
+  list-style: none;
+}
+
+.nav_btn a {
+  font-family: "Syncopate";
+  font-size: 14px;
+  text-decoration: none;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 90%;
+  padding: 20px 30px;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(4px);
+  border: 1px solid var(--main-color);
+  transition: opacity 0.3s;
+}
+
+.nav_btn a:hover {
+  opacity: 0.85;
+}
+
+.nav_btn a:before {
+  content: "";
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #f2ebeb;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 55%;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.nav_btn-cat_intro:before {
+  background-image: url(../images/nav_btn-cat_intro.svg);
+  transform: rotate(-2.5deg);
+}
+
+.nav_btn-gallery:before {
+  background-image: url(../images/nav_btn-gallery.svg);
+  transform: rotate(2.5deg);
+}
+
+
+.nav li a {
+  line-height: 1;
+}
+
+
+/*container--------------------*/
+.about_container {
+  margin: 0 auto;
+  max-width: 880px;
+}
+
+
+/*main--------------------*/
+.main {
+  overflow: visible;
+  /* stickyを効かせるために重要 */
+}
+
+.main_container {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  height: auto;
+  width: 100%;
+  margin-bottom: -2em;
+}
+
+.logo_img {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 100px;
+  height: auto;
+  width: 100%;
+  text-align: center;
+  line-height: 0;
+}
+
+.logo_group {
+  display: flex;
+  position: absolute;
+  /* 親の真ん中に浮かせる */
+  top: 50%;
+  left: 0;
+  z-index: 10;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  will-change: transform;
+  /* Macでのガタつき防止に必須 */
+}
+
+/* JSでこのクラスがついた時だけアニメーションを開始 */
+.is-animated {
+  animation: flowText 12s linear infinite;
+}
+
+.logo_sub {
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: var(--main-color);
+  margin: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(4px);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.2;
+  padding: 4px 0;
+  height: 1.5rem;
+  flex-shrink: 0;
+  /* Mac/Safariでの文字重なりを防ぐ重要 */
+  will-change: transform;
+}
+
+@keyframes flowText {
+  0% {
+    transform: translate(0, -50%);
+  }
+
+  100% {
+    transform: translate(-14.28%, -50%);
+    /* 全体の半分（1組分）が左に流れたらリセット */
+  }
+}
+
+#sticky {
+  position: sticky;
+  bottom: -200px;
+  width: 100%;
+  z-index: 100;
+  pointer-events: none;
+  display: flex;
+  justify-content: center;
+  overflow: visible;
+  line-height: 0;
+}
+
+.sticky_cat {
+  width: 800px;
+  max-width: 100%;
+  display: block;
+  transform-origin: bottom center;
+  transition: transform 0.9s ease-out;
+}
+
+.sticky_cat.is-small {
+  transform: scale(0.7);
+}
+
+.about_txt {
+  font-size: 26px;
+  line-height: 2.5;
+  letter-spacing: 0.03em;
+  margin-bottom: -4em;
+  color: var(--main-color);
+}
+
+.about_txt-big {
+  font-size: 48px;
+  font-weight: bold;
+}
+
+
+/*parallax bg_img--------------------*/
+.parallax_content {
+  display: flex;
+  width: 100%;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+}
+
+.parallax_content::before,
+.parallax_content::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4rem;
+  display: block;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.parallax_content::before {
+  background-image: url(../images/bg1.svg);
+  top: 0;
+  left: 0;
+}
+
+.parallax_content::after {
+  background-image: url(../images/bg2.svg);
+  bottom: 0;
+  left: 0;
+}
+
+.para_img {
+  background-image: url(../images/para_img1.jpg);
+  background-position: center;
+  /* 中央基準 */
+  width: 100%;
+}
+
+.para_txt {
+  color: #fff;
+  font-size: 1.6rem;
+  text-shadow: 2px 2px 12px rgba(0, 0, 0, 0.4);
+}
+
+
+/*kijitora_container--------------------*/
+.main_txt {
+  text-align: center;
+  margin-top: 150px;
+  font-size: 2rem;
+  font-weight: normal;
+  margin-bottom: -5px;
+  transform: rotate(-2deg);
+}
+
+.sub_txt {
+  text-align: center;
+  margin-bottom: 2rem;
+  transform: rotate(3deg);
+}
+
+.main_txt .another {
+  transform: rotate(2deg);
+}
+
+.sub_txt .another {
+  transform: rotate(-3deg);
+}
+
+.cat_container {
+  display: flex;
+  margin: 0px 100px 0 100px;
+  align-items: center;
+  justify-content: center;
+}
+
+.cat_txt_main {
+  font-size: 7rem;
+  text-decoration: underline;
+  text-decoration-thickness: 4px;
+  text-underline-offset: 1.7px;
+  line-height: 0.9;
+  text-align: center;
+  font-weight: normal;
+  white-space: nowrap;
+  margin-bottom: 20px;
+}
+
+.cat_txt {
+  flex: 2;
+}
+
+.cat_img {
+  flex: 3;
+}
+
+.cat_txt_memo {
+  margin-bottom: 10px;
+}
+
+.cat_txt_info {
+  transform: scale(0.95);
+  transform-origin: left top;
+}
+
+.cat_txt_dt,
+.cat_txt_dd {
+  margin-bottom: 2px;
+  padding: 6px 0 0 8px;
+}
+
+.cat_txt_dt {
+  background-color: var(--main-color);
+  color: #fff;
+  border-radius: 90%;
+  padding: 6px 24px;
+}
+
+.cat_img_bg {
+  color: #444;
+}
+
+#cat_intro .cat_container+.cat_container {
+  margin-top: 80px;
+}
+
+.cat_container.fuuchan {
+  padding-left: 60px;
+}
+
+/*
+.sp_only {
+  display: none;
+}
+
+
+/*gallery--------------------*/
+#gallery h2 {
+  transform: rotate(2deg);
+}
+
+#gallery .sub_txt {
+  transform: rotate(-3deg);
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* PC & TB：3列 */
+  gap: 12px;
+  padding: 12px;
+  margin-bottom: 70px;
+}
+
+.item {
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: 8px;
+  background: #ddd;
+}
+
+.item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+/*footer--------------------*/
+.footer_copy {
+  color: #fff;
+  background-color: var(--main-color);
+  font-size: small;
+  text-align: center;
+  padding: 10px;
+}
+
+
+/*texture--------------------*/
+.texture {
+  position: relative;
+}
+
+.texture::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../images/texture.png);
+  background-repeat: repeat;
+  background-size: 300px;
+  opacity: 0.08;
+  z-index: 9999;
+  mix-blend-mode: multiply;
+  pointer-events: none;
+}
+
+
+/*tb----------*/
+@media (max-width: 1000px) {
+  #sticky {
+    bottom: -180px;
+  }
+
+  .about_container {
+    margin: 100px 60px 0 60px;
+  }
+
+  .about_txt {
+    margin-bottom: -6em;
+  }
+
+  .sub_txt {
+    margin-bottom: -4rem;
+  }
+
+  .cat_container {
+    margin: 100px 60px;
+  }
+
+  .cat_container.fuuchan {
+    padding-left: 0;
+  }
+
+  /*.sp_only {
+    display: inline;
+  }*/
+
+  #cat_intro .cat_container+.cat_container {
+    margin-top: 50px;
+  }
+
+  .gallery {
+    margin-bottom: 10px;
+  }
+}
+
+
+/*sp----------*/
+@media (max-width: 768px) {
+  #sticky {
+    bottom: -80px;
+  }
+
+  .nav {
+    transform: scale(0.95);
+    transform-origin: top center;
+  }
+
+  .about_container,
+  .cat_container {
+    margin: 100px 40px;
+  }
+
+  .cat_container {
+    margin-top: 0;
+  }
+
+  /*
+  .logo {
+    font-size: 36vw;
+    line-height: 10rem;
+  }*/
+
+  .para_img {
+    background-image: url(../images/para_img1-sp.jpg), url(../images/bg1.svg);
+  }
+
+  .cat_container {
+    flex-direction: column;
+  }
+
+  .fuuchan {
+    flex-direction: column-reverse;
+  }
+
+  .cat_txt {
+    margin-top: -80px;
+  }
+
+  .sub_txt {
+    margin-bottom: 1.5rem;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    padding: 8px;
+  }
+}

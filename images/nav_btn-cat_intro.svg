@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_1" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 48 48">
+  <!-- Generator: Adobe Illustrator 30.0.0, SVG Export Plug-In . SVG Version: 2.1.1 Build 123)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: #d23519;
+      }
+
+      .st1 {
+        fill: none;
+        stroke: #d23519;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 3px;
+      }
+    </style>
+  </defs>
+  <g>
+    <polyline class="st1" points="22.1 26.6 24 28.5 24 31.7 20.5 35.2"/>
+    <line class="st1" x1="24" y1="28.5" x2="26" y2="26.5"/>
+    <line class="st1" x1="24" y1="31.7" x2="27.5" y2="35.2"/>
+  </g>
+  <g>
+    <path class="st0" d="M11.1,18.4c2.9,0,6.9,2.2,6.9,4.4s-2.4,3.9-5.3,3.9-5.3-1.7-5.3-3.9.7-4.4,3.7-4.4h0Z"/>
+    <path class="st0" d="M40.6,22.8c0,2.1-2.4,3.9-5.3,3.9s-5.3-1.7-5.3-3.9,4-4.4,6.9-4.4,3.7,2.2,3.7,4.4h0Z"/>
+  </g>
+  <g>
+    <path class="st1" d="M31.9,10.1S40.6,1.6,42.5,1.6s3.9,13.1,3.9,13.1"/>
+    <path class="st1" d="M16.1,10.1S7.4,1.6,5.6,1.6,1.7,14.7,1.7,14.7"/>
+  </g>
+  <path class="st1" d="M14.8,32s-4.3-1.4-9.2,0"/>
+  <path class="st1" d="M14.7,36.9s-4.5-.2-8.9,2.3"/>
+  <path class="st1" d="M33.2,32s4.3-1.4,9.2,0"/>
+  <path class="st1" d="M33.3,36.9s4.5-.2,8.9,2.3"/>
+</svg>
