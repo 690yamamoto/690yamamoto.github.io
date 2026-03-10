@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_2" data-name="レイヤー 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.82 29.84">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #c4cfd6;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 9px;
+      }
+    </style>
+  </defs>
+  <g id="_スマホ" data-name="スマホ">
+    <path class="cls-1" d="M19.32,4.5S6.32,13.86,4.5,14.92c1.82,1.06,14.82,10.42,14.82,10.42"/>
+  </g>
+</svg>
