@@ -24,6 +24,7 @@ body {
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 
 body::before,
@@ -158,13 +159,12 @@ header {
   flex: 1;
   display: flex;
   flex-direction: column;
-  position: relative;
 }
 
 .title-txt {
   position: absolute;
   margin: 0 auto;
-  top: -90px;
+  top: 10px;
   pointer-events: none;
   width: 80%;
 }
@@ -466,8 +466,8 @@ footer {
   }
 
   .title-txt {
-    top: 60px;
-    width: 98%;
+    top: 100px;
+    width: 90%;
   }
 
   .btn-tel {
@@ -551,5 +551,9 @@ footer {
   .logo-add {
     width: 68%;
     max-width: none;
+  }
+
+  .title-txt {
+    top: 130px;
   }
 }
