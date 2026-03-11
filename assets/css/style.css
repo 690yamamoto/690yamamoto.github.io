@@ -446,18 +446,18 @@ footer {
 
 
 /*responsive======================*/
-@media (max-width: 900px) {
+@media (max-width: 800px) {
 
   /* 左 */
   body::before {
     top: 0;
-    background: url(../img/frame1_sp.svg) no-repeat top center / contain;
+    background: url(../img/frame1_tb.svg) no-repeat top center / contain;
   }
 
   /* 右 */
   body::after {
     bottom: 0;
-    background: url(../img/frame2_sp.svg) no-repeat bottom center / contain;
+    background: url(../img/frame2_tb.svg) no-repeat bottom center / contain;
   }
 
   main {
@@ -536,9 +536,21 @@ footer {
 
 
 /*responsive======================*/
-@media (max-width: 400px) {
+@media (max-width: 500px) {
+  /* 左 */
+  body::before {
+    top: 0;
+    background: url(../img/frame1_sp.svg) no-repeat top center / contain;
+  }
+
+  /* 右 */
+  body::after {
+    bottom: 0;
+    background: url(../img/frame2_sp.svg) no-repeat bottom center / contain;
+  }
+
   header {
-    padding: 20px 16px 0;
+    padding: 30px 16px 0;
   }
 
 
