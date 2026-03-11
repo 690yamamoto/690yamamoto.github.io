@@ -468,7 +468,7 @@ footer {
   }
 
   .title-txt {
-    top: 20%;
+    top: 16%;
     width: 90%;
   }
 
@@ -532,7 +532,7 @@ footer {
   }
 
   footer {
-    padding-bottom: 60px;
+    padding-bottom: 100px;
   }
 }
 
@@ -568,6 +568,10 @@ footer {
   }
 
   .title-txt {
-    top: 30%;
+    top: 24%;
+  }
+
+  footer {
+    padding-bottom: 200px;
   }
 }
