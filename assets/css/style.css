@@ -446,7 +446,7 @@ footer {
 
 
 /*responsive======================*/
-@media (max-width: 700px) {
+@media (max-width: 900px) {
 
   /* 左 */
   body::before {
