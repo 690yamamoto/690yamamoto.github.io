@@ -324,7 +324,7 @@ header {
   position: absolute;
   left: 50%;
   top: 0;
-  transform: translate(-50%, -80%);
+  transform: translate(-50%, -85%);
   width: 80%;
   pointer-events: none;
 }
