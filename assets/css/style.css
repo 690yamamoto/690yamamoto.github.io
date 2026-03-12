@@ -561,4 +561,8 @@ footer {
   .title-txt {
     width: 96%;
   }
+
+  .page-container {
+  margin-top: -40px;
+}
 }
