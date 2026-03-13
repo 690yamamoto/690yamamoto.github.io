@@ -502,6 +502,10 @@ footer {
     /*※3*/
   }
 
+  .swiper-modal-btn img {
+  transform: scale(0.8);
+}
+
   .modal-body {
     padding: 0px 30px 30px;
   }
