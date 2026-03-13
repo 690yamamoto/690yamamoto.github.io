@@ -472,9 +472,9 @@ footer {
   }
 
   .btn-tel {
-    right: -40px;
-    bottom: -40px;
-    transform: scale(0.955);
+    right: -44px;
+    bottom: -44px;
+    transform: scale(0.9);
   }
 
   .btn-tel-icn {
