@@ -234,7 +234,7 @@ header {
   opacity: 1;
 }
 
-.swiper-slide >img {
+.swiper-slide>img {
   width: 100%;
 }
 
@@ -355,7 +355,7 @@ header {
 .modal-content {
   position: relative;
   width: min(900px, 85%);
-  height: 90vh;
+  max-height: 90vh;
   background: #fff;
   display: flex;
   flex-direction: column;
@@ -502,10 +502,6 @@ footer {
     /*※3*/
   }
 
-  .modal-content {
-    height: 90vh;
-  }
-
   .modal-body {
     padding: 0px 30px 30px;
   }
@@ -520,8 +516,8 @@ footer {
   }
 
   footer {
-  padding-top: 60px;
-}
+    padding-top: 60px;
+  }
 }
 
 
@@ -564,6 +560,6 @@ footer {
   }
 
   .page-container {
-  margin-top: -50px;
-}
+    margin-top: -50px;
+  }
 }
