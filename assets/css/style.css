@@ -79,6 +79,11 @@ img {
   font-weight: bold;
 }
 
+.flex-box {
+  display: flex;
+  align-items: flex-start;
+}
+
 
 
 /*main============*/
@@ -354,7 +359,7 @@ header {
 
 .modal-content {
   position: relative;
-  width: min(900px, 85%);
+  width: min(800px, 85%);
   max-height: 90vh;
   background: #fff;
   display: flex;
@@ -414,29 +419,60 @@ header {
   margin-bottom: 28px;
 }
 
-.point {
-  display: flex;
+.memo {
   background-color: #f4f6f7;
   margin-top: 20px;
-  padding: 20px;
+  padding: 20px 32px 16px 20px;
   border-radius: 4px;
+  transform-origin: left top;
 }
 
-.point-title {
-  padding: 5px 12px 0 0;
+.memo-title {
+  padding: 10px 12px 0 0;
   writing-mode: vertical-rl;
   color: var(--main-color);
 }
 
-.point-txt,
-.point-title {
+.memo-info {
+  flex: 1;
   font-size: 0.95em;
-  line-height: 1.65;
 }
 
+.memo-info dl {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  border-bottom: 1px dotted rgba(55, 60, 79, 0.2);
+  padding: 8px 0 8px;
+}
 
+.memo-info dl:last-child {
+  border-bottom: none;
+}
 
-/*footer======================*/
+.memo_dt,
+.memo_dd {
+  line-height: 1.4;
+}
+
+.memo_dt {
+  flex: 0 0 100px;
+  white-space: nowrap;
+}
+
+.memo_dd {
+  flex: 1;
+}
+
+/*.memo_dt::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid var(--txt-color);
+  margin-left: 8px;
+  opacity: 0.15;
+}
+
+footer======================*/
 footer {
   font-size: small;
   text-align: center;
@@ -518,6 +554,20 @@ footer {
     width: 100%;
     margin-bottom: 24px;
   }
+
+  .memo.flex-box {
+    display: block;
+  }
+
+  .memo-title {
+    writing-mode: horizontal-tb;
+    padding: 0;
+    margin-bottom: 0;
+  }
+
+  .memo {
+  padding: 14px 24px 8px;
+}
 
   footer {
     padding-top: 60px;
