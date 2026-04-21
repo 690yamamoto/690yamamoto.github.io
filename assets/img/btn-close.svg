@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_2" data-name="レイヤー 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f7f9fa;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #37bef0;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 7px;
+      }
+    </style>
+  </defs>
+  <g id="_スマホデザイン" data-name="スマホデザイン">
+    <g>
+      <circle class="cls-1" cx="40" cy="40" r="40"/>
+      <g>
+        <line class="cls-2" x1="30.95" y1="30.95" x2="49.05" y2="49.05"/>
+        <line class="cls-2" x1="49.05" y1="30.95" x2="30.95" y2="49.05"/>
+      </g>
+    </g>
+  </g>
+</svg>
