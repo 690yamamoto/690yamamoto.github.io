@@ -912,4 +912,15 @@ footer {
   footer {
     padding-top: 60px;
   }
+
+  .works.container {
+    overflow: hidden;
+    width: 100%;
+  }
+
+  html, body {
+    overflow-x: hidden;
+    position: relative;
+    width: 100%;
+  }
 }
