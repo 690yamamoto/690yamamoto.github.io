@@ -61,17 +61,17 @@ body.is-scrolled::after {
 }
 
 p {
-  line-height: 2;
-  letter-spacing: 0.09em;
+  line-height: 1.85;
+  letter-spacing: 0.06em;
   font-weight: 500;
 }
 
 .section-title {
-  margin: 0 auto 40px;
+  margin: 0 auto 36px;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 14px;
+  gap: 8px;
 }
 
 h2 p {
@@ -432,7 +432,6 @@ text-align: center;
 }
 
 .name-content {
-  white-space: nowrap;
     font-size: 18pt;
     text-align: center;
     letter-spacing: 0.5em;
@@ -777,7 +776,7 @@ footer {
   text-align: left;
   font-size: small;
   opacity: .7;
-  padding: 100px 0;
+  padding: 100px 0 80px 44px;
 }
 
 
@@ -824,10 +823,7 @@ footer {
   .btn-tel {
     right: -50px;
     bottom: -50px;
-  }
-
-  .btn-tel-icn {
-    gap: 2px;
+    transform: scale(0.85);
   }
 
   .intro {
@@ -901,7 +897,7 @@ footer {
 }
 
   .modal-body {
-    padding: 0px 30px 30px;
+    padding: 0px 24px 24px;
   }
 
   .modal-title {
@@ -915,13 +911,14 @@ footer {
 
   .memo {
     display: block;
-    padding: 10px 30px 20px 30px;
+    padding: 20px 20px 8px 20px;
   }
 
   .memo-title {
     writing-mode: horizontal-tb;
     padding: 0 0 -5px;
     margin-bottom: 10px;
+    line-height: 0;
   }
 
   .memo_dd {
