@@ -28,10 +28,10 @@ body {
 body::after {
   content: "";
   position: fixed;
-  inset: -12px; 
+  inset: -18px; 
   pointer-events: none;
   z-index: 999;
-  border: 24px solid transparent; 
+  border: 30px solid transparent; 
   border-radius: 44px;
   transition: border-color 0.4s ease;
 }
@@ -783,6 +783,12 @@ footer {
 
 /*responsive======================*/
 @media (max-width: 900px) {
+
+  body::after {
+  inset: -22px; 
+  border: 30px solid transparent; 
+}
+
   .mv-inner {
   height: 76vh;
 }
